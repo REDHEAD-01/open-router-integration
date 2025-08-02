@@ -1,4 +1,5 @@
-import { callHuggingFaceModel } from "./services/huggingFace.js";
+import { queryHuggingFace } from "../services/huggingFace.js";  ✅ correct path
+
 
 export async function matchUserAndRooms(currentUser, allUsers, availableRooms) {
   const survey = currentUser.surveyAnswers;
@@ -34,3 +35,4 @@ Return the best roommate(s) and a recommended room.
     generatedAt: new Date().toISOString()
   };
 }
+
